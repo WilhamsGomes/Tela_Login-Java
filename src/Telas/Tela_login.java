@@ -101,6 +101,7 @@ public class Tela_login extends javax.swing.JFrame {
             Tela_Secundaria obj = new Tela_Secundaria();
             obj.setVisible(true);
             dispose ();
+            System.out.println ("LOGIN ACEITO");
             break;
         } 
         
