@@ -113,7 +113,7 @@ public class Tela_login extends javax.swing.JFrame {
         }
         
          if (tentativas==0){   
-         JOptionPane.showMessageDialog(null, "Número limite de tentativas atingido! Por favor contacte o administrador");
+         JOptionPane.showMessageDialog(null, "Número limite de tentativas atingido!  Por favor contacte o administrador");
          btn_acessar.setVisible(false);
          }
         
