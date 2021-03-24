@@ -108,12 +108,12 @@ public class Tela_login extends javax.swing.JFrame {
         while (!txt_login.getText().equals("User") || (!txt_senha.getText().equals("1234"))){
          tentativas -=1;
          lbl_erro1.setVisible(true);
-         JOptionPane.showMessageDialog(null,"Usuário e/ou incorreto(s). Tente novamente! Vc só tem mais " +tentativas+ " tentativa(s)");
+         JOptionPane.showMessageDialog(null,"Usuário e/ou incorreto(s). Tente novamente! Vc tem apenas " +tentativas+ " tentativa(s)");
          break;
         }
         
          if (tentativas==0){   
-         JOptionPane.showMessageDialog(null, "Número limite de tentativas atingido! Por favor contacte o administrador");
+         JOptionPane.showMessageDialog(null, "Número limite de tentativas atingido!  Por favor contacte o administrador");
          btn_acessar.setVisible(false);
          }
         
