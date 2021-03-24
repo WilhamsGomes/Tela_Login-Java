@@ -108,7 +108,7 @@ public class Tela_login extends javax.swing.JFrame {
         while (!txt_login.getText().equals("User") || (!txt_senha.getText().equals("1234"))){
          tentativas -=1;
          lbl_erro1.setVisible(true);
-         JOptionPane.showMessageDialog(null,"Usuário e/ou incorreto(s). Tente novamente! Vc tem apenas " +tentativas+ " tentativa(s)");
+         JOptionPane.showMessageDialog(null,"Usuário e/ou incorreto(s). Tente novamente! Vc só pode tentar mais" +tentativas+ " vez(es)");
          break;
         }
         
