@@ -81,14 +81,18 @@ public class Tela_Secundaria extends javax.swing.JFrame {
        
         String vnome = lbl_cod.getText();
         String vnome2 = txt_cod.getText();
-                     
+          
+        int j = Integer.parseInt(vnome);
+        int x = Integer.parseInt(vnome2);
        
-        if (vnome == vnome2){
+        if (j == x){
             
             Tela_login obj = new Tela_login();
             obj.setVisible(true);
             dispose ();
             
+        } else {
+            System.out.println("Código rejeitado");
         }
        
         
