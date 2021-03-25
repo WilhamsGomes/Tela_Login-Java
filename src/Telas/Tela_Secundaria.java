@@ -18,6 +18,7 @@ public class Tela_Secundaria extends javax.swing.JFrame {
         lbl_cod = new javax.swing.JLabel();
         btn_voltar1 = new javax.swing.JButton();
         txt_cod = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,6 +51,9 @@ public class Tela_Secundaria extends javax.swing.JFrame {
             }
         });
         PainelCor.add(txt_cod, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 180, 50));
+
+        jLabel1.setText("Informe o código acima e volte para tela inicial");
+        PainelCor.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, -1, -1));
 
         getContentPane().add(PainelCor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 390));
 
@@ -140,6 +144,7 @@ public class Tela_Secundaria extends javax.swing.JFrame {
     private javax.swing.JPanel PainelCor;
     private javax.swing.JButton btn_cod;
     private javax.swing.JButton btn_voltar1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lbl_cod;
     private javax.swing.JTextField txt_cod;
     // End of variables declaration//GEN-END:variables
