@@ -30,7 +30,7 @@ public class Tela_Secundaria extends javax.swing.JFrame {
                 btn_codActionPerformed(evt);
             }
         });
-        PainelCor.add(btn_cod, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 100, 40));
+        PainelCor.add(btn_cod, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 120, 40));
 
         lbl_cod.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         lbl_cod.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -90,6 +90,7 @@ public class Tela_Secundaria extends javax.swing.JFrame {
             Tela_login obj = new Tela_login();
             obj.setVisible(true);
             dispose ();
+            System.out.println("Código correto");
             
         } else {
             System.out.println("Código rejeitado");
