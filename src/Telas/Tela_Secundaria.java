@@ -7,8 +7,7 @@ public class Tela_Secundaria extends javax.swing.JFrame {
     public Tela_Secundaria() {
         initComponents();
     }
-    
-    public String senha02;
+   
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -32,6 +31,9 @@ public class Tela_Secundaria extends javax.swing.JFrame {
             }
         });
         PainelCor.add(btn_cod, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 100, 40));
+
+        lbl_cod.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        lbl_cod.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PainelCor.add(lbl_cod, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 180, 50));
 
         btn_voltar1.setText("Voltar");
@@ -77,7 +79,17 @@ public class Tela_Secundaria extends javax.swing.JFrame {
 
     private void btn_voltar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_voltar1ActionPerformed
        
-        
+        String vnome = lbl_cod.getText();
+        String vnome2 = txt_cod.getText();
+                     
+       
+        if (vnome == vnome2){
+            
+            Tela_login obj = new Tela_login();
+            obj.setVisible(true);
+            dispose ();
+            
+        }
        
         
     }//GEN-LAST:event_btn_voltar1ActionPerformed
